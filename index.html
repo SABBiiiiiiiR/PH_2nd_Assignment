@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWave</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.css" integrity="sha512-NhLySQDkiKSKnT+R795uaHWRQ7D3VuIvgeOLCK8cWq4w5fq4sWF90gj8eURpTqn/f1mFzqClpOz8JPlgVTLfFw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="font-inter bg-[#412567]">
+        
+        <nav class="relative z-50 max-w-5xl flex justify-between items-center mx-auto p-[30px] text-white">
+          <h1 class="text-3xl font-bold">Tech<span class="bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent">Wave</span></h1>
+    
+          <label for="menu-toggle" class="cursor-pointer sm:hidden block">
+          <div class="space-y-1.5">
+            <span class="block w-8 h-0.5 bg-white"></span>
+            <span class="block w-8 h-0.5 bg-white"></span>
+            <span class="block w-8 h-0.5 bg-white"></span>
+          </div>
+          </label>
+
+          <input type="checkbox" id="menu-toggle" class="hidden peer">
+    
+          <div class="hidden peer-checked:flex flex-col absolute top-full left-0 w-full bg-[#0F0821] p-6  sm:static sm:flex sm:flex-row sm:flex-1 sm:justify-center sm:bg-transparent sm:p-0 items-center gap-8">
+                 <ul class="flex flex-col sm:flex-row items-center gap-8 font-medium">
+                     <li><a href="#" class="hover:text-pink-500 transition">Host</a></li>
+                     <li><a href="#" class="hover:text-pink-500 transition">About</a></li>
+                     <li><a href="#" class="hover:text-pink-500 transition">Episodes</a></li>
+                 </ul>
+                </div>
+                <button class="hidden sm:flex px-6 py-3 bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-xl font-semibold cursor-pointer hover:opacity-90 transition">
+                    Subscribe <i class="fa-solid fa-arrow-right ml-2"></i>
+                </button>
+           </div>
+        </nav>
+
+        <section id="banner" class="">
+            <div class="flex flex-col justify-center items-center  text-white mx-auto py-24 bg-center " style=" background-image: url(./assets/hero-bg.png);">
+                <div id="banner-container" class="flex flex-col items-center sm:px-5 sm:py-10 ">
+                    <div id="bnr-img" class="sm:w-[350px] sm:h-[350px] w-[200px] h-[200px] relative">
+                        <img class="object-cover rounded-lg" src="/assets/hero-circle.png" alt="">
+                        <img class=" sm:w-fit sm:h-60 w-fit h-24 sm:p-16 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 " src="/assets/microphone.png" alt="">
+                        <button class="bg-[#00FF88] py-2 px-4 rounded-full text-black font-semibold text-[1.5rem] text-left absolute top-4 right-4 ">NEW</button>
+                    </div>
+                    <div id="bnr-cntnt" class="flex flex-col items-center justify-center  text-wrap">
+                        <h1 class="name text-6xl font-bold text-center leading-[73px] my-2">TechWave</h1>
+                        <p class="text-[1rem] text-center flex-wrap">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                        <div class="bnr-btn flex justify-center items-center gap-2 my-6 h-11 ">
+                            <button class=" py-3 px-5 bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8]  rounded-[10000px] font-semibold cursor-pointer"><span class="shadow-2xl"><i class="fa-brands fa-spotify"></i> Listen on Spotify</span></button>
+                            <button class="py-3 px-5 border-2 border-[#00FF88] text-[#00FF88]  rounded-[10000px] font-semibold cursor-pointer "><i class="fa-regular fa-envelope"></i> Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    </header>
+
+</body>
+</html>
